@@ -20,11 +20,12 @@ while(userChoice!=0){
     }else if(userChoice == computerChoice){
             console.log(`Its a tie. Computer Choice: ${computerChoice}`)
             userChoice = input.question(`welcome to rock paper scissors. Please enter rock, paper, scissors or 0 to quit\n>> `);
-
-    }else if(userChoice !='rock'userChoice!='paper'||userChoice!='scissors' ||isNan(userChoice) == false){
-        console.log('Please try again with a valid input')
+//checks for valid input: rock paper scissor, 0//
+    }else if(userChoice != 'rock' && userChoice != 'paper' && userChoice != 'scissors' && isNaN(userChoice)) {
+        console.log('Please try again with a valid input');
         userChoice = input.question(`welcome to rock paper scissors. Please enter rock, paper, scissors or 0 to quit\n>> `);
     }
+    
 
    }
    console.log(`Thank You for playing`);
